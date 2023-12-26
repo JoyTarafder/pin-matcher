@@ -58,7 +58,7 @@
 <script>
 
     document.getElementById('random-generate-btn').addEventListener('click', function(){
-        let randomInputNumber = Math.floor(1000 + Math.random() * 9000);
+        let randomInputNumber = Math.floor(100000 + Math.random() * 900000);
 
         document.getElementById('generate-pin').value = randomInputNumber;
     })
@@ -77,6 +77,7 @@
 
     }
     document.getElementById('submitBtn').addEventListener('click',function(){
+        
 
         const randomNumber = document.getElementById('generate-pin').value;
         const matchNumber = document.getElementById('match-pin').value;
@@ -100,6 +101,9 @@
             notMatched.style.display = "block"
             matched.style.display = 'none'
         }
+        clearAllInput()
+        removeInput()
+
     })
     </script>
 </body>
