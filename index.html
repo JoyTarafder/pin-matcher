@@ -72,7 +72,6 @@
         document.getElementById("match-pin").value = "" ;
     } 
     function removeInput(){
- 
         const number = document.getElementById('match-pin').value;
         document.getElementById("match-pin").value = number.substr(0, number.length - 1);
 
@@ -89,6 +88,8 @@
         const notMatched =  document.getElementById("not-matched-pin");
         const emptyBox = document.getElementById("empty");
 
+        // notify area massage show match or not match or empty box
+        
         if(randomNumber == ""){
             emptyBox.style.display = 'block'
             notMatched.style.display = 'none'
