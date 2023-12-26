@@ -59,7 +59,7 @@
 <script>
 
     document.getElementById('random-generate-btn').addEventListener('click', function(){
-        let randomInputNumber = Math.floor(100000 + Math.random() * 900000);
+        let randomInputNumber = Math.floor(1000 + Math.random() * 9000);
 
         document.getElementById('generate-pin').value = randomInputNumber;
     })
@@ -89,7 +89,7 @@
         const emptyBox = document.getElementById("empty");
 
         // notify area massage show match or not match or empty box
-        
+
         if(randomNumber == ""){
             emptyBox.style.display = 'block'
             notMatched.style.display = 'none'
